@@ -1,0 +1,219 @@
+body {
+  margin: 0px;
+  overflow: hidden;
+}
+.gökyüzü {
+  background-color: #11abf3;
+  width: 100%;
+  min-height: 35vh;
+  position: relative;
+}
+.grass {
+  background-color: #0fe668;
+  width: 100%;
+  min-height: 40vh;
+  z-index: 180;
+  position: relative;
+}
+
+#sonne {
+  position: absolute;
+  top: 2%;
+  left: 30%;
+  animation: sonne 22s linear 3s infinite alternate;
+  z-index: 150;
+}
+
+#cloud1 {
+  position: absolute;
+  top: 15px;
+  animation: cloud 25s linear 0s infinite;
+  z-index: 160;
+}
+#cloud4 {
+  position: absolute;
+  top: 20px;
+  z-index: 160;
+  left: 60%;
+}
+#cloud2 {
+  position: absolute;
+  left: -20%;
+  top: 25px;
+  animation: cloud 15s linear 20s infinite alternate-reverse;
+  z-index: 160;
+}
+#cloud3 {
+  position: absolute;
+  left: -20%;
+  top: 25px;
+  animation: cloud 25s linear 10s infinite reverse;
+  z-index: 160;
+}
+#mountain {
+  background-image: url(https://cdn-icons-png.flaticon.com/512/614/614132.png);
+  background-size: 212px;
+  background-position: 120px;
+  position: absolute;
+  top: -88px;
+  min-width: 100%;
+  min-height: 100px;
+}
+#tree {
+  position: absolute;
+  top: -45px;
+  left: 15px;
+}
+#tree2 {
+  position: absolute;
+  top: 20px;
+  left: 150px;
+}
+#tree3 {
+  position: absolute;
+  top: 20px;
+  right: 150px;
+}
+#tree4 {
+  position: absolute;
+  top: -45px;
+  right: 15px;
+}
+#flower {
+  position: absolute;
+  top: 20px;
+  left: 350px;
+}
+#flower1 {
+  position: absolute;
+  top: 30px;
+  left: 450px;
+}
+#flower2 {
+  position: absolute;
+  top: 20px;
+  left: 550px;
+}
+#flower3 {
+  position: absolute;
+  top: 30px;
+  left: 650px;
+}
+#flower4 {
+  position: absolute;
+  top: 20px;
+  left: 750px;
+}
+#flower5 {
+  position: absolute;
+  top: 30px;
+  left: 850px;
+}
+#flower6 {
+  position: absolute;
+  top: 20px;
+  left: 950px;
+}
+#flower7 {
+  position: absolute;
+  top: 30px;
+  left: 1050px;
+}
+#flower8 {
+  position: absolute;
+  top: 20px;
+  left: 1150px;
+}
+.weg {
+  background-color: gray;
+  max-width: 100%;
+  min-height: 25vh;
+  position: relative;
+}
+.weg:after {
+  content: "";
+  min-width: 100%;
+  min-height: 12.5vh;
+  position: absolute;
+  border-bottom: 3px dashed rgb(247, 242, 242);
+}
+#auto {
+  position: absolute;
+  top: 10px;
+  left: -50%;
+  animation: auto 8s ease-in 5s infinite;
+  z-index: 100;
+}
+
+@keyframes sonne {
+  from {
+    top: 2%;
+    left: 30%;
+  }
+  to {
+    top: 130%;
+    left: 80%;
+  }
+}
+
+@keyframes cloud {
+  from {
+    left: -20%;
+  }
+  to {
+    left: 100%;
+  }
+}
+@keyframes auto {
+  from {
+    left: -50%;
+  }
+  to {
+    left: 200%;
+  }
+}
+
+.gece {
+  position: fixed;
+  min-width: 100%;
+  min-height: 100vh;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0);
+  z-index: 210;
+  animation: gece 20s linear 3s infinite alternate-reverse;
+}
+@keyframes gece {
+  0% {
+    background-color: rgba(27, 27, 27, 0);
+  }
+  10% {
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+  20% {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  30% {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  40% {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  50% {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  60% {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  70% {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  80% {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  90% {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  100% {
+    background-color: rgba(0, 0, 0, 0);
+  }
+}
